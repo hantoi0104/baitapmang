@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="sapxep()">Run</button>
+
+<p id="demo"></p>
+
+<script>
+    var subject = [4, 144, 25, 16];
+    document.getElementById("demo").innerHTML = subject;
+    function sosanh(a, b) {
+        return a - b;
+    }
+    function sapxep() {
+        subject.sort(sosanh);
+        document.getElementById("demo").innerHTML = subject;
+    }
+</script>
+</body>
+</html>
